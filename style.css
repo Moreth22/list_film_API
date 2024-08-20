@@ -1,0 +1,144 @@
+:root {
+    --primary-color: #F88812;
+    --light-primary: #F99C39;
+    --lightest-color: #e1e7e8;
+    --secondary-color: #498258;
+    --light-secondary: #a6e0b5;
+}
+
+* {
+    font-family: Montserrat, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+}
+
+button {
+    cursor: pointer;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: var(--lightest-color);
+    padding: 1.5rem;
+}
+
+header h1 i {
+    margin-right: 0.5rem;
+}
+
+#h1 {
+    width: 35%;
+    flex-wrap: wrap;
+}
+
+#search-container {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 60%;
+}
+
+main {
+    text-align: center;
+    padding: 1.5rem 0;
+    color: var(--primary-color);
+    background-color: var(--lightest-color);
+    flex-grow: 1;
+    padding-bottom: 100px;
+}
+
+#movie-name {
+    margin-right: 1rem;
+    padding: 3px;
+    width: 70%;
+    min-width: 150px;
+    max-width: 30rem;
+    height: 23px;
+    border: none;
+    color: var(--secondary-color);
+    font-weight: 500;
+}
+
+#movie-year {
+    margin-right: 1rem;
+    padding: 3px;
+    width: 60px;
+    height: 23px;
+    border: none;
+    font-weight: 500;
+}
+
+#movie-name:focus, #movie-year:focus {
+    color: var(--primary-color);
+}
+
+#btn-search {
+    min-height: 23px;
+    min-width: 23px;
+    border: 1px solid;
+    padding: 2px;
+    background-color: var(--primary-color);
+    color: #FFF;
+}
+
+#btn-search:hover {
+    color: var(--secondary-color);
+}
+
+#movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    padding: 0 1.5rem 0 1.5rem;
+}
+
+#movie-list article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#movie-list article img {
+    border-radius: 10px;
+    margin-bottom: 0.3rem;
+    max-height: 420px;
+}
+
+#movie-list article button {
+    all: unset;
+    color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+    padding: 0.3rem 0;
+    border-radius: 8px;
+    font-weight: bold;
+    width: 100%;
+    box-shadow: 1px 1px 10px #615e5e;
+    cursor: pointer;
+}
+
+#movie-list article button:hover,
+#movie-list article button:focus {
+    color: var(--lightest-color);
+    background-color: var(--secondary-color);
+}
+
+footer div {
+    text-align: center;
+    align-content: center;
+    width: 100%;
+    height: 4dvh;
+    background-color: var(--secondary-color);
+    color: var(--lightest-color);
+}
